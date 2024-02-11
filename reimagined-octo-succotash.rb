@@ -5,20 +5,20 @@
 class ReimaginedOctoSuccotash < Formula
   desc "reimagined-octo-succotash homebrew tap."
   homepage "https://github.com/taspotts/reimagined-octo-succotash"
-  version "0.5.0"
+  version "0.6.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.5.0/reimagined-octo-succotash_Darwin_arm64.tar.gz"
-      sha256 "4e9879b87c7faaf4a5069ba5beb63b3b96d96aff41059cc0356c1a1925f787d5"
+      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.6.0/reimagined-octo-succotash_Darwin_arm64.tar.gz"
+      sha256 "fc3c25ef96ce5c9f876e0e78589e214ca97e126785e21bd62c7fd3d68e3fff7e"
 
       def install
         bin.install "reimagined-octo-succotash"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.5.0/reimagined-octo-succotash_Darwin_x86_64.tar.gz"
-      sha256 "4ae1916c3d24e00ec96c8a6e15a5a77f2ef80912b4b6a319cfa12faa7b599778"
+      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.6.0/reimagined-octo-succotash_Darwin_x86_64.tar.gz"
+      sha256 "d2c6854f26a1094015c9cafbfb586b2443e9fc4eb4ac76ce83bb9e513f9cce41"
 
       def install
         bin.install "reimagined-octo-succotash"
@@ -28,16 +28,16 @@ class ReimaginedOctoSuccotash < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.5.0/reimagined-octo-succotash_Linux_x86_64.tar.gz"
-      sha256 "1ba335865c1f1faef6bbae0585f83fe80328f922169001a1f6c17ab82ce0ec28"
+      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.6.0/reimagined-octo-succotash_Linux_x86_64.tar.gz"
+      sha256 "12ca80225935747818236be3969c4f5fdadc59f60934de7780ea4b6ea2573281"
 
       def install
         bin.install "reimagined-octo-succotash"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.5.0/reimagined-octo-succotash_Linux_arm64.tar.gz"
-      sha256 "2f7a5c77a48389022757d287b49368c9d897cd3628543833fe8832def01ca553"
+      url "https://github.com/taspotts/reimagined-octo-succotash/releases/download/v0.6.0/reimagined-octo-succotash_Linux_arm64.tar.gz"
+      sha256 "7700ff68b1ad78504c7b23094f86da03e7be9312e58866d9545715545ecdd48c"
 
       def install
         bin.install "reimagined-octo-succotash"
